@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { StyleProp, ViewStyle, ListView, NativeSyntheticEvent, NativeScrollEvent, ListRenderItemInfo, ListViewDataSource, SectionListProps, FlatListProps } from 'react-native';
 
-interface IPropsSwipeRow<T> {
+export interface IPropsSwipeRow<T> {
 	/**
 	 * Used by the SwipeListView to close rows on scroll events.
 	 * You shouldn't need to use this prop explicitly.
@@ -147,7 +147,7 @@ type IRenderListViewProps<T> = Omit<Omit<Omit<IPropsSwipeListView<T>, 'useFlatLi
 
 type RowMap<T> = { [open_cell_key: string]: SwipeRow<T>; };
 
-interface IPropsSwipeListView<T> {
+export interface IPropsSwipeListView<T> {
 	// data: T[];
 	// sections: Array<{
 	// 	title: string;
